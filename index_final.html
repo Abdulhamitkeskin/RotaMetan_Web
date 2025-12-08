@@ -99,6 +99,60 @@
         .icon-farm-c { display:flex; align-items:center; justify-content:center; border-radius:50%; color:white; font-size:10px; border:2px solid white; }
         .bg-red { background:var(--red); } .bg-grey { background:#90a4ae; }
 
+
+        @media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* GENEL KUTULAR */
+  .container,
+  .panel,
+  .dashboard,
+  .controls {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* HARİTA / CANVAS */
+  #map,
+  canvas {
+    width: 100% !important;
+    height: 320px !important;
+  }
+
+  /* TABLOLAR */
+  table {
+    width: 100% !important;
+    font-size: 12px;
+    display: block;
+    overflow-x: auto;
+  }
+
+  /* BUTONLAR */
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* SAYISAL PANELLER */
+  .stat-box,
+  .card,
+  .info-box {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  /* FLEX YAPILAR */
+  .row,
+  .flex,
+  .panel-row {
+    flex-direction: column !important;
+  }
+
+}
+
     </style>
 </head>
 <body>
